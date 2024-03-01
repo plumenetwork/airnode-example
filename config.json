@@ -1,0 +1,71 @@
+{
+  "chains": [
+    {
+      "id": "161221135",
+      "type": "evm",
+      "providers": {
+        "myChainProvider": {
+          "url": "${CHAIN_PROVIDER_URL}"
+        }
+      },
+      "contracts": {
+        "AirnodeRrp": "0xa7005248c0596f93dd947f74Bf11F4ba153b72Dd"
+      },
+      "options": {
+        "fulfillmentGasLimit": 500000,
+        "gasPriceOracle": [
+          {
+            "gasPriceStrategy": "constantGasPrice",
+            "gasPrice": {
+              "value": 10,
+              "unit": "gwei"
+            }
+          }
+        ]
+      },
+      "authorizers": {
+        "requesterEndpointAuthorizers": [],
+        "crossChainRequesterAuthorizers": [],
+        "requesterAuthorizersWithErc721": [],
+        "crossChainRequesterAuthorizersWithErc721": []
+      },
+      "authorizations": {
+        "requesterEndpointAuthorizations": {}
+      },
+      "maxConcurrency": 5
+    }
+  ],
+  "nodeSettings": {
+    "cloudProvider": {
+      "type": "gcp",
+      "region": "us-east1",
+      "projectId": "plume-test-413221",
+      "disableConcurrencyReservations": true
+    },
+    "airnodeWalletMnemonic": "${AIRNODE_WALLET_MNEMONIC}",
+    "heartbeat": {
+      "enabled": false
+    },
+    "httpGateway": {
+      "enabled": false
+    },
+    "httpSignedDataGateway": {
+      "enabled": false
+    },
+    "oevGateway": {
+      "enabled": false
+    },
+    "logFormat": "plain",
+    "logLevel": "DEBUG",
+    "nodeVersion": "0.14.0",
+    "stage": "dev"
+  },
+  "triggers": {
+    "rrp": [],
+    "http": [],
+    "httpSignedData": []
+  },
+  "templates": [],
+  "ois": [],
+  "apiCredentials": []
+}

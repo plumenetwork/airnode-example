@@ -1,0 +1,19 @@
+{
+  "airnodeWallet": {
+    "airnodeAddress": "0x9002e072FfF118C247184f86Ea216F42520eA90C",
+    "airnodeXpub": "xpub6CHRQnhGDoLAn5YtpWBRdQeSeHsLunHsWcYrsbGBwdwpcTwo83u7stRLLwGMHXb1DGhqtCc7x2x9HXpD7kiyFsFLVBSEi5ZF8LN1qXwfaw9"
+  },
+  "deployment": {
+    "deploymentId": "gcpaa91dc7e",
+    "cloudProvider": {
+      "type": "gcp",
+      "region": "us-east1",
+      "projectId": "plume-test-413221",
+      "disableConcurrencyReservations": true
+    },
+    "stage": "dev",
+    "nodeVersion": "0.14.0",
+    "timestamp": "2024-02-03T21:27:32.811Z"
+  },
+  "success": true
+}
